@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+</head>
+<body>
+  <h2>로그인 페이지</h2>
+  {% if error %}
+  <p style="color: red;">{{ error }}</p>
+  {% endif %}
+  <form method="post">
+    <p>아이디: <input type="text" name="username" required></p>
+    <p>비밀번호: <input type="text" name="password" required></p>
+    <p><input type="submit" value="로그인"></p>
+  </form>
+</body>
+</html>

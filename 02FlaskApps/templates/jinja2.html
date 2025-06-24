@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- if, for문과 같은 제어문은 아래와 같이 %로 감싸서 기술한다. -->
+  {% if title %}
+  <title>{{title}}</title>
+  {% endif %}
+</head>
+<body>
+  <!-- 변수 출력시에는 중괄호 2개를 겹쳐서 사용한다. -->
+  <h1>바인딩 문자열 : {{home_str}}</h1>
+  <p>바인딩 리스트[2:4] : {{home_list[2:4]}}</p>
+  <ul>
+    <!-- for문을 사용하면 HTML 태그를 물리적으로 반복해서 출력할 수 있다. -->
+    {% for idx in home_list %}
+    <li>{{idx}}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>플라스크 로고 이미지</h2> 
+  <h4>static 하위</h4>  
+  <!--
+  이미지, js, css와 같은 정적파일들은 플라스크 프로젝트 내부에서는
+  static 폴더 하위에 저장해야 한다. 그리고 최상위 root에 생성된 폴더이므로
+  아래와 같이 경로 설정을 해야 한다. 
+  -->
+  <!-- 절대경로로 지정(최상위 root경로부터 시작) -->
+  <img src="/static/img/flask2.png" width=200><br>
+  <!-- 상대경로로 지정(현재 실행된 경로부터 시작) -->
+  <img src="./static/img/flask2.png" width=200><br>
+  
+  <h4>templates 하위</h4> 
+  이미지가 표시되지 않음<br>
+  <!-- templates 하위에 있는 이미지는 화면에 출력되지 않는다.
+   즉 이미지와 같은 정적리소스는 반드시 static 하위에 저장해야 한다. -->
+  <img src="./images/flask1.png" width=200> <br>
+</body>
+</html>

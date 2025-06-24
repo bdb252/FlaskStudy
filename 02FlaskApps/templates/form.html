@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flask Form</title>
+</head>
+<body>
+  <h2>GET 방식</h2> 
+  <form action="/method" method="get">
+    아이디 : <input type="text" name="userid"><br>
+    이름 : <input type="text" name="name"><br>
+    이메일 : <input type="text" name="email"><br>
+    <input type="submit" value="GET 방식 전송">
+  </form>
+  <h2>POST 방식</h2>
+  <form action="/method" method="post">
+    아이디 : <input type="text" name="userid"><br>
+    이름 : <input type="text" name="name"><br>
+    이메일 : <input type="text" name="email"><br>
+    <input type="submit" value="POST 방식 전송">
+  </form>
+</body>
+</html>
